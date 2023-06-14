@@ -30,9 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vRevenue));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bt_LogOut = new QuanLyBaiXe.VControls.VButton();
+            this.bt_Log = new QuanLyBaiXe.VControls.VButton();
+            this.bt_Revenue = new QuanLyBaiXe.VControls.VButton();
+            this.bt_Search = new QuanLyBaiXe.VControls.VButton();
+            this.bt_VIP = new QuanLyBaiXe.VControls.VButton();
+            this.bt_InOut = new QuanLyBaiXe.VControls.VButton();
             this.data_Revenue = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dt_thang_Revenue = new QuanLyBaiXe.VControls.VDateTimePicker();
+            this.dt_nam_Revenue = new QuanLyBaiXe.VControls.VDateTimePicker();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -41,21 +50,12 @@
             this.button14 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.bt_LogOut = new QuanLyBaiXe.VControls.VButton();
-            this.bt_Log = new QuanLyBaiXe.VControls.VButton();
-            this.bt_Revenue = new QuanLyBaiXe.VControls.VButton();
-            this.bt_Search = new QuanLyBaiXe.VControls.VButton();
-            this.bt_VIP = new QuanLyBaiXe.VControls.VButton();
-            this.bt_InOut = new QuanLyBaiXe.VControls.VButton();
             this.bt_tim_Revenue = new QuanLyBaiXe.VControls.VButton();
-            this.dt_nam_Revenue = new QuanLyBaiXe.VControls.VDateTimePicker();
-            this.dt_thang_Revenue = new QuanLyBaiXe.VControls.VDateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_Revenue)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -71,6 +71,135 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(172, 426);
             this.panel2.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(172, 94);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // bt_LogOut
+            // 
+            this.bt_LogOut.BackColor = System.Drawing.Color.SteelBlue;
+            this.bt_LogOut.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.bt_LogOut.BorderColor = System.Drawing.Color.Black;
+            this.bt_LogOut.BorderRadius = 0;
+            this.bt_LogOut.BorderSize = 1;
+            this.bt_LogOut.FlatAppearance.BorderSize = 0;
+            this.bt_LogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_LogOut.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_LogOut.ForeColor = System.Drawing.Color.White;
+            this.bt_LogOut.Location = new System.Drawing.Point(0, 372);
+            this.bt_LogOut.Name = "bt_LogOut";
+            this.bt_LogOut.Size = new System.Drawing.Size(172, 54);
+            this.bt_LogOut.TabIndex = 12;
+            this.bt_LogOut.Text = "Đăng Xuất";
+            this.bt_LogOut.TextColor = System.Drawing.Color.White;
+            this.bt_LogOut.UseVisualStyleBackColor = false;
+            this.bt_LogOut.Click += new System.EventHandler(this.bt_LogOut_Click);
+            // 
+            // bt_Log
+            // 
+            this.bt_Log.BackColor = System.Drawing.Color.SteelBlue;
+            this.bt_Log.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.bt_Log.BorderColor = System.Drawing.Color.Black;
+            this.bt_Log.BorderRadius = 0;
+            this.bt_Log.BorderSize = 1;
+            this.bt_Log.FlatAppearance.BorderSize = 0;
+            this.bt_Log.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Log.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Log.ForeColor = System.Drawing.Color.White;
+            this.bt_Log.Location = new System.Drawing.Point(0, 318);
+            this.bt_Log.Name = "bt_Log";
+            this.bt_Log.Size = new System.Drawing.Size(172, 54);
+            this.bt_Log.TabIndex = 11;
+            this.bt_Log.Text = "Log";
+            this.bt_Log.TextColor = System.Drawing.Color.White;
+            this.bt_Log.UseVisualStyleBackColor = false;
+            this.bt_Log.Click += new System.EventHandler(this.bt_Log_Click);
+            // 
+            // bt_Revenue
+            // 
+            this.bt_Revenue.BackColor = System.Drawing.Color.SteelBlue;
+            this.bt_Revenue.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.bt_Revenue.BorderColor = System.Drawing.Color.Black;
+            this.bt_Revenue.BorderRadius = 0;
+            this.bt_Revenue.BorderSize = 1;
+            this.bt_Revenue.FlatAppearance.BorderSize = 0;
+            this.bt_Revenue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Revenue.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Revenue.ForeColor = System.Drawing.Color.White;
+            this.bt_Revenue.Location = new System.Drawing.Point(0, 264);
+            this.bt_Revenue.Name = "bt_Revenue";
+            this.bt_Revenue.Size = new System.Drawing.Size(172, 54);
+            this.bt_Revenue.TabIndex = 10;
+            this.bt_Revenue.Text = "Doanh Thu";
+            this.bt_Revenue.TextColor = System.Drawing.Color.White;
+            this.bt_Revenue.UseVisualStyleBackColor = false;
+            // 
+            // bt_Search
+            // 
+            this.bt_Search.BackColor = System.Drawing.Color.SteelBlue;
+            this.bt_Search.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.bt_Search.BorderColor = System.Drawing.Color.Black;
+            this.bt_Search.BorderRadius = 0;
+            this.bt_Search.BorderSize = 1;
+            this.bt_Search.FlatAppearance.BorderSize = 0;
+            this.bt_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Search.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Search.ForeColor = System.Drawing.Color.White;
+            this.bt_Search.Location = new System.Drawing.Point(0, 210);
+            this.bt_Search.Name = "bt_Search";
+            this.bt_Search.Size = new System.Drawing.Size(172, 54);
+            this.bt_Search.TabIndex = 9;
+            this.bt_Search.Text = "Tìm Kiếm";
+            this.bt_Search.TextColor = System.Drawing.Color.White;
+            this.bt_Search.UseVisualStyleBackColor = false;
+            this.bt_Search.Click += new System.EventHandler(this.bt_Search_Click);
+            // 
+            // bt_VIP
+            // 
+            this.bt_VIP.BackColor = System.Drawing.Color.SteelBlue;
+            this.bt_VIP.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.bt_VIP.BorderColor = System.Drawing.Color.Black;
+            this.bt_VIP.BorderRadius = 0;
+            this.bt_VIP.BorderSize = 1;
+            this.bt_VIP.FlatAppearance.BorderSize = 0;
+            this.bt_VIP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_VIP.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_VIP.ForeColor = System.Drawing.Color.White;
+            this.bt_VIP.Location = new System.Drawing.Point(0, 156);
+            this.bt_VIP.Name = "bt_VIP";
+            this.bt_VIP.Size = new System.Drawing.Size(172, 54);
+            this.bt_VIP.TabIndex = 8;
+            this.bt_VIP.Text = "Vé VIP";
+            this.bt_VIP.TextColor = System.Drawing.Color.White;
+            this.bt_VIP.UseVisualStyleBackColor = false;
+            this.bt_VIP.Click += new System.EventHandler(this.bt_VIP_Click);
+            // 
+            // bt_InOut
+            // 
+            this.bt_InOut.BackColor = System.Drawing.Color.SteelBlue;
+            this.bt_InOut.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.bt_InOut.BorderColor = System.Drawing.Color.Black;
+            this.bt_InOut.BorderRadius = 0;
+            this.bt_InOut.BorderSize = 1;
+            this.bt_InOut.FlatAppearance.BorderSize = 0;
+            this.bt_InOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_InOut.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_InOut.ForeColor = System.Drawing.Color.White;
+            this.bt_InOut.Location = new System.Drawing.Point(0, 102);
+            this.bt_InOut.Name = "bt_InOut";
+            this.bt_InOut.Size = new System.Drawing.Size(172, 54);
+            this.bt_InOut.TabIndex = 7;
+            this.bt_InOut.Text = "Xe Ra Vào";
+            this.bt_InOut.TextColor = System.Drawing.Color.White;
+            this.bt_InOut.UseVisualStyleBackColor = false;
+            this.bt_InOut.Click += new System.EventHandler(this.bt_InOut_Click);
             // 
             // data_Revenue
             // 
@@ -109,6 +238,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 426);
             this.panel1.TabIndex = 13;
+            // 
+            // dt_thang_Revenue
+            // 
+            this.dt_thang_Revenue.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.dt_thang_Revenue.BorderSize = 2;
+            this.dt_thang_Revenue.CustomFormat = "MMMM, yyy";
+            this.dt_thang_Revenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dt_thang_Revenue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dt_thang_Revenue.Location = new System.Drawing.Point(549, 5);
+            this.dt_thang_Revenue.MinimumSize = new System.Drawing.Size(4, 30);
+            this.dt_thang_Revenue.Name = "dt_thang_Revenue";
+            this.dt_thang_Revenue.Size = new System.Drawing.Size(215, 30);
+            this.dt_thang_Revenue.SkinColor = System.Drawing.Color.White;
+            this.dt_thang_Revenue.TabIndex = 34;
+            this.dt_thang_Revenue.TextColor = System.Drawing.Color.DimGray;
+            // 
+            // dt_nam_Revenue
+            // 
+            this.dt_nam_Revenue.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.dt_nam_Revenue.BorderSize = 2;
+            this.dt_nam_Revenue.CustomFormat = "yyy";
+            this.dt_nam_Revenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dt_nam_Revenue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dt_nam_Revenue.Location = new System.Drawing.Point(224, 5);
+            this.dt_nam_Revenue.MinimumSize = new System.Drawing.Size(4, 30);
+            this.dt_nam_Revenue.Name = "dt_nam_Revenue";
+            this.dt_nam_Revenue.Size = new System.Drawing.Size(215, 30);
+            this.dt_nam_Revenue.SkinColor = System.Drawing.Color.White;
+            this.dt_nam_Revenue.TabIndex = 33;
+            this.dt_nam_Revenue.TextColor = System.Drawing.Color.DimGray;
             // 
             // button9
             // 
@@ -181,125 +340,6 @@
             this.panel7.Size = new System.Drawing.Size(598, 42);
             this.panel7.TabIndex = 4;
             // 
-            // bt_LogOut
-            // 
-            this.bt_LogOut.BackColor = System.Drawing.Color.SteelBlue;
-            this.bt_LogOut.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.bt_LogOut.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_LogOut.BorderRadius = 0;
-            this.bt_LogOut.BorderSize = 0;
-            this.bt_LogOut.FlatAppearance.BorderSize = 0;
-            this.bt_LogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_LogOut.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_LogOut.ForeColor = System.Drawing.Color.White;
-            this.bt_LogOut.Location = new System.Drawing.Point(0, 372);
-            this.bt_LogOut.Name = "bt_LogOut";
-            this.bt_LogOut.Size = new System.Drawing.Size(172, 54);
-            this.bt_LogOut.TabIndex = 12;
-            this.bt_LogOut.Text = "Đăng Xuất";
-            this.bt_LogOut.TextColor = System.Drawing.Color.White;
-            this.bt_LogOut.UseVisualStyleBackColor = false;
-            this.bt_LogOut.Click += new System.EventHandler(this.bt_LogOut_Click);
-            // 
-            // bt_Log
-            // 
-            this.bt_Log.BackColor = System.Drawing.Color.SteelBlue;
-            this.bt_Log.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.bt_Log.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_Log.BorderRadius = 0;
-            this.bt_Log.BorderSize = 0;
-            this.bt_Log.FlatAppearance.BorderSize = 0;
-            this.bt_Log.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Log.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Log.ForeColor = System.Drawing.Color.White;
-            this.bt_Log.Location = new System.Drawing.Point(0, 318);
-            this.bt_Log.Name = "bt_Log";
-            this.bt_Log.Size = new System.Drawing.Size(172, 54);
-            this.bt_Log.TabIndex = 11;
-            this.bt_Log.Text = "Log";
-            this.bt_Log.TextColor = System.Drawing.Color.White;
-            this.bt_Log.UseVisualStyleBackColor = false;
-            this.bt_Log.Click += new System.EventHandler(this.bt_Log_Click);
-            // 
-            // bt_Revenue
-            // 
-            this.bt_Revenue.BackColor = System.Drawing.Color.SteelBlue;
-            this.bt_Revenue.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.bt_Revenue.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_Revenue.BorderRadius = 0;
-            this.bt_Revenue.BorderSize = 0;
-            this.bt_Revenue.FlatAppearance.BorderSize = 0;
-            this.bt_Revenue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Revenue.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Revenue.ForeColor = System.Drawing.Color.White;
-            this.bt_Revenue.Location = new System.Drawing.Point(0, 264);
-            this.bt_Revenue.Name = "bt_Revenue";
-            this.bt_Revenue.Size = new System.Drawing.Size(172, 54);
-            this.bt_Revenue.TabIndex = 10;
-            this.bt_Revenue.Text = "Doanh Thu";
-            this.bt_Revenue.TextColor = System.Drawing.Color.White;
-            this.bt_Revenue.UseVisualStyleBackColor = false;
-            // 
-            // bt_Search
-            // 
-            this.bt_Search.BackColor = System.Drawing.Color.SteelBlue;
-            this.bt_Search.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.bt_Search.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_Search.BorderRadius = 0;
-            this.bt_Search.BorderSize = 0;
-            this.bt_Search.FlatAppearance.BorderSize = 0;
-            this.bt_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Search.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Search.ForeColor = System.Drawing.Color.White;
-            this.bt_Search.Location = new System.Drawing.Point(0, 210);
-            this.bt_Search.Name = "bt_Search";
-            this.bt_Search.Size = new System.Drawing.Size(172, 54);
-            this.bt_Search.TabIndex = 9;
-            this.bt_Search.Text = "Tìm Kiếm";
-            this.bt_Search.TextColor = System.Drawing.Color.White;
-            this.bt_Search.UseVisualStyleBackColor = false;
-            this.bt_Search.Click += new System.EventHandler(this.bt_Search_Click);
-            // 
-            // bt_VIP
-            // 
-            this.bt_VIP.BackColor = System.Drawing.Color.SteelBlue;
-            this.bt_VIP.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.bt_VIP.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_VIP.BorderRadius = 0;
-            this.bt_VIP.BorderSize = 0;
-            this.bt_VIP.FlatAppearance.BorderSize = 0;
-            this.bt_VIP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_VIP.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_VIP.ForeColor = System.Drawing.Color.White;
-            this.bt_VIP.Location = new System.Drawing.Point(0, 156);
-            this.bt_VIP.Name = "bt_VIP";
-            this.bt_VIP.Size = new System.Drawing.Size(172, 54);
-            this.bt_VIP.TabIndex = 8;
-            this.bt_VIP.Text = "Vé VIP";
-            this.bt_VIP.TextColor = System.Drawing.Color.White;
-            this.bt_VIP.UseVisualStyleBackColor = false;
-            this.bt_VIP.Click += new System.EventHandler(this.bt_VIP_Click);
-            // 
-            // bt_InOut
-            // 
-            this.bt_InOut.BackColor = System.Drawing.Color.SteelBlue;
-            this.bt_InOut.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.bt_InOut.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_InOut.BorderRadius = 0;
-            this.bt_InOut.BorderSize = 0;
-            this.bt_InOut.FlatAppearance.BorderSize = 0;
-            this.bt_InOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_InOut.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_InOut.ForeColor = System.Drawing.Color.White;
-            this.bt_InOut.Location = new System.Drawing.Point(0, 102);
-            this.bt_InOut.Name = "bt_InOut";
-            this.bt_InOut.Size = new System.Drawing.Size(172, 54);
-            this.bt_InOut.TabIndex = 7;
-            this.bt_InOut.Text = "Xe Ra Vào";
-            this.bt_InOut.TextColor = System.Drawing.Color.White;
-            this.bt_InOut.UseVisualStyleBackColor = false;
-            this.bt_InOut.Click += new System.EventHandler(this.bt_InOut_Click);
-            // 
             // bt_tim_Revenue
             // 
             this.bt_tim_Revenue.BackColor = System.Drawing.Color.SteelBlue;
@@ -319,46 +359,6 @@
             this.bt_tim_Revenue.TextColor = System.Drawing.Color.White;
             this.bt_tim_Revenue.UseVisualStyleBackColor = false;
             // 
-            // dt_nam_Revenue
-            // 
-            this.dt_nam_Revenue.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.dt_nam_Revenue.BorderSize = 2;
-            this.dt_nam_Revenue.CustomFormat = "yyy";
-            this.dt_nam_Revenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dt_nam_Revenue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt_nam_Revenue.Location = new System.Drawing.Point(224, 5);
-            this.dt_nam_Revenue.MinimumSize = new System.Drawing.Size(4, 30);
-            this.dt_nam_Revenue.Name = "dt_nam_Revenue";
-            this.dt_nam_Revenue.Size = new System.Drawing.Size(215, 30);
-            this.dt_nam_Revenue.SkinColor = System.Drawing.Color.White;
-            this.dt_nam_Revenue.TabIndex = 33;
-            this.dt_nam_Revenue.TextColor = System.Drawing.Color.DimGray;
-            // 
-            // dt_thang_Revenue
-            // 
-            this.dt_thang_Revenue.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.dt_thang_Revenue.BorderSize = 2;
-            this.dt_thang_Revenue.CustomFormat = "MMMM, yyy";
-            this.dt_thang_Revenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dt_thang_Revenue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt_thang_Revenue.Location = new System.Drawing.Point(549, 5);
-            this.dt_thang_Revenue.MinimumSize = new System.Drawing.Size(4, 30);
-            this.dt_thang_Revenue.Name = "dt_thang_Revenue";
-            this.dt_thang_Revenue.Size = new System.Drawing.Size(215, 30);
-            this.dt_thang_Revenue.SkinColor = System.Drawing.Color.White;
-            this.dt_thang_Revenue.TabIndex = 34;
-            this.dt_thang_Revenue.TextColor = System.Drawing.Color.DimGray;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 94);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // vRevenue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,11 +371,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "vRevenue";
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_Revenue)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

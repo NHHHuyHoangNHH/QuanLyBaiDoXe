@@ -15,6 +15,7 @@ namespace QuanLyBaiXe
         public vLogin()
         {
             InitializeComponent();
+            Icon = Properties.Resources.icon;
         }
 
         private void bt_dangnhap_Click(object sender, EventArgs e)

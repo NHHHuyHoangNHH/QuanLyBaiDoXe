@@ -15,6 +15,7 @@ namespace QuanLyBaiXe
         public vLog()
         {
             InitializeComponent();
+            Icon = Properties.Resources.icon;
         }
 
         private void bt_InOut_Click(object sender, EventArgs e)

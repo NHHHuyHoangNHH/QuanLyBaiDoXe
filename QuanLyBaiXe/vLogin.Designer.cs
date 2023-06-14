@@ -99,7 +99,7 @@
             this.tb_matkhau.BorderRadius = 15;
             this.tb_matkhau.BorderSize = 2;
             this.tb_matkhau.ForeColor = System.Drawing.Color.DimGray;
-            this.tb_matkhau.Location = new System.Drawing.Point(218, 132);
+            this.tb_matkhau.Location = new System.Drawing.Point(218, 136);
             this.tb_matkhau.Multiline = false;
             this.tb_matkhau.Name = "tb_matkhau";
             this.tb_matkhau.Padding = new System.Windows.Forms.Padding(7);

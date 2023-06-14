@@ -15,6 +15,7 @@ namespace QuanLyBaiXe
         public vVIP()
         {
             InitializeComponent();
+            Icon = Properties.Resources.icon;
         }
 
         private void bt_InOut_Click(object sender, EventArgs e)
